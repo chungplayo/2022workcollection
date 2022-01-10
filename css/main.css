@@ -229,7 +229,7 @@ html, body {
   }
 
   .index-info {
-    padding: 0 16px;
+    padding: 0 8px;
   }
 }
 footer {
@@ -374,7 +374,7 @@ footer .footer-info .contact-data > div h5 {
 }
 @media (max-width: 650px) {
   .project .text-block {
-    padding: 0 16px;
+    padding: 0 8px;
   }
 }
 .about .h3 {
