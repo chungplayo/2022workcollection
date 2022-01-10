@@ -178,6 +178,14 @@ html, body {
     display: none;
   }
 }
+@media (max-width: 400px) {
+  .index-info {
+    margin-top: 24px;
+  }
+  .index-info .index-img img {
+    width: 60px;
+  }
+}
 .works-list {
   display: -ms-grid;
   display: grid;
@@ -617,8 +625,8 @@ nav .nav {
   height: 32px;
   background: url("../img/icon/loading.png");
   background-size: cover;
-  -webkit-animation: spin 0.5s linear infinite;
-          animation: spin 0.5s linear infinite;
+  -webkit-animation: spin 0.3s linear infinite;
+          animation: spin 0.3s linear infinite;
 }
 
 @-webkit-keyframes spin {
