@@ -47,6 +47,11 @@ img {
     --img-rounded: 20px;
   }
 }
+body {
+  overflow-y: hidden;
+  visibility: hidden;
+}
+
 html, body {
   position: relative;
   background-color: #f0f0f0;
@@ -569,4 +574,77 @@ nav .nav {
     top: auto;
     bottom: calc(50px + 50px);
   }
+}
+#loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: calc(var(--vh, 1vh) * 100);
+  background: #F4F4F4;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 30000000;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -ms-touch-action: none;
+      touch-action: none;
+  top: 0;
+  left: 0;
+}
+
+#loading-img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#loading-img:after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../img/ic_loading.png");
+  background-size: cover;
+  -webkit-animation: spin 0.5s linear infinite;
+          animation: spin 0.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.loading-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loading {
+  overflow-y: hidden;
+}
+
+.overflowscroll {
+  overflow-y: scroll;
+  visibility: visible;
 }

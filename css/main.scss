@@ -50,6 +50,11 @@ img{width: 100%; display: block;}
     }
 }
 
+body {
+    overflow-y: hidden;
+    visibility: hidden;
+}
+
 html, body {
     position: relative;
     background-color: #f0f0f0;
@@ -596,7 +601,57 @@ nav {
 
 
 
+#loading {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 100);
+    background: #F4F4F4;
+    justify-content: center;
+    align-items: center;
+    z-index: 30000000;
+    transition: 0.5s ease;
+    touch-action: none;
+    top: 0;
+    left: 0;
+}
 
+#loading-img {
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
+#loading-img:after {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url("../img/ic_loading.png");
+    background-size: cover;
+    animation: spin 0.5s linear infinite;
+}
 
+@keyframes spin {
+    100% {
+        transform:rotate(360deg);
+    }
+}
 
+.loading-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loading {
+    overflow-y: hidden;
+}
+
+.overflowscroll {
+    overflow-y: scroll;
+    visibility: visible;
+}
