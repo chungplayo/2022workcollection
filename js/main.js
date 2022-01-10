@@ -19,7 +19,6 @@ function switch_contactinfo() {
 }
 
 
-
 window.onload = function() {
   // document.getElementById("loading").innerHTML ='載入完成！';
   document.getElementById("body").classList.add("overflowscroll");
