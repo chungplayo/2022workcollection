@@ -216,6 +216,12 @@ html, body {
   font-size: 14px;
 }
 
+@media (max-width: 768px) {
+  .works-list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 footer {
   color: #FFF;
   background-color: #333;
@@ -350,11 +356,6 @@ footer .footer-info .contact-data > div h5 {
 @media (max-width: 768px) {
   .project {
     margin-top: 56px;
-  }
-
-  .grid-2 {
-    -ms-grid-columns: (1fr)[1];
-    grid-template-columns: repeat(1, 1fr);
   }
 }
 .about .h3 {

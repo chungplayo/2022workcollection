@@ -214,7 +214,7 @@ html, body {
 }
 @media (max-width: 768px) {
     .works-list {
-        // grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -370,7 +370,7 @@ footer {
     }
 
     .grid-2 {
-        grid-template-columns: repeat(1, 1fr);
+        // grid-template-columns: repeat(1, 1fr);
     }
 
     .project .project-detail .item {
