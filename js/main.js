@@ -21,7 +21,10 @@ function switch_contactinfo() {
 
 window.onload = function() {
   // document.getElementById("loading").innerHTML ='載入完成！';
+  setTimeout('loadingOut()', 1000);
+}
+
+function loadingOut() {
   document.getElementById("body").classList.add("overflowscroll");
   document.getElementById("loading").classList.add("loading-out");
 }
-
