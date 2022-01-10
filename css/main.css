@@ -216,12 +216,6 @@ html, body {
   font-size: 14px;
 }
 
-@media (max-width: 768px) {
-  .works-list {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
 footer {
   color: #FFF;
   background-color: #333;
