@@ -34,6 +34,7 @@ img {
   --text-desc: 0.3;
   --bg-img: #DFDFDF;
   --grid-gap: 32px;
+  --grid-project-gap: 32px;
   --viewside-gap: 32px;
   --img-rounded: 40px;
 }
@@ -41,6 +42,7 @@ img {
 @media (max-width: 768px) {
   :root {
     --grid-gap: 24px;
+    --grid-project-gap: 16px;
     --viewside-gap: 16px;
     --img-rounded: 20px;
   }
@@ -165,7 +167,7 @@ html, body {
   .index-info .index-img img {
     display: block;
     width: 100px;
-    margin-bottom: 40px;
+    margin-bottom: 16px;
   }
 
   .index-block > div .animoji img {
@@ -224,6 +226,10 @@ html, body {
   .works-list {
     -ms-grid-columns: 1fr;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .index-info {
+    padding: 0 16px;
   }
 }
 footer {
@@ -341,9 +347,9 @@ footer .footer-info .contact-data > div h5 {
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr var(--grid-gap) 1fr;
+  -ms-grid-columns: 1fr var(--grid-project-gap) 1fr;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: var(--grid-gap);
+  grid-gap: var(--grid-project-gap);
   margin: var(--grid-gap) 0;
 }
 
@@ -360,6 +366,15 @@ footer .footer-info .contact-data > div h5 {
 @media (max-width: 768px) {
   .project {
     margin-top: 56px;
+  }
+  .project .project-text {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 650px) {
+  .project .text-block {
+    padding: 0 16px;
   }
 }
 .about .h3 {
