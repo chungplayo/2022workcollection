@@ -72,7 +72,7 @@ html, body {
     line-height: 160%;
     opacity: var(--text-main);
 }
-#h0 {font-size: 2.875em;line-height: 140%;}
+#h0 {font-size: 3.4em;line-height: 140%;}
 .h1 {font-size: 2.875em;}
 .h2 {font-size: 2em;}
 .h3 {font-size: 1.5em;}
@@ -84,11 +84,17 @@ html, body {
     padding: 0 var(--viewside-gap);
 }
 
+
+@media (max-width: 768px) {
+
+    #h0 {font-size: 2.6em;}
+}
+
 // index --------------------------------------------------------------------
 
 
 .index-info {
-    max-width: 600px;
+    max-width: 550px;
     margin: 120px 32px 160px;
     // padding: 0 16px;
 
@@ -136,14 +142,14 @@ html, body {
             bottom : -170px;
 
             >img {
-                max-width: 250px;
+                max-width: 280px;
             }
         }
     }
 }
 @media (max-width: 992px) {
     .index-info {
-        max-width: 992px;
+        // max-width: 992px;
         margin: 40px 0px 80px;
 
         .index-img img{
