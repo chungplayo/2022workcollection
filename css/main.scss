@@ -177,7 +177,7 @@ html, body {
 @media (max-width: 400px) {
     .index-info {
         margin-top: 24px;
-        
+
 
         .index-img img{
             width: 60px;
@@ -619,7 +619,7 @@ nav {
     justify-content: center;
     align-items: center;
     z-index: 30000000;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
     touch-action: none;
     top: 0;
     left: 0;
@@ -642,7 +642,7 @@ nav {
     height: 32px;
     background: url("../img/icon/loading.png");
     background-size: cover;
-    animation: spin 0.3s linear infinite;
+    animation: spin 0.7s linear infinite;
 }
 
 @keyframes spin {

@@ -597,9 +597,9 @@ nav .nav {
       -ms-flex-align: center;
           align-items: center;
   z-index: 30000000;
-  -webkit-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
-  transition: 0.5s ease;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
   -ms-touch-action: none;
       touch-action: none;
   top: 0;
@@ -625,8 +625,8 @@ nav .nav {
   height: 32px;
   background: url("../img/icon/loading.png");
   background-size: cover;
-  -webkit-animation: spin 0.3s linear infinite;
-          animation: spin 0.3s linear infinite;
+  -webkit-animation: spin 0.7s linear infinite;
+          animation: spin 0.7s linear infinite;
 }
 
 @-webkit-keyframes spin {
