@@ -49,7 +49,6 @@ img {
 }
 body {
   overflow-y: hidden;
-  visibility: hidden;
 }
 
 html, body {
@@ -646,5 +645,4 @@ nav .nav {
 
 .overflowscroll {
   overflow-y: scroll;
-  visibility: visible;
 }
