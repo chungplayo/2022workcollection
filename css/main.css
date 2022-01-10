@@ -582,7 +582,7 @@ nav .nav {
   position: fixed;
   width: 100vw;
   height: calc(var(--vh, 1vh) * 100);
-  background: #F4F4F4;
+  background: #f0f0f0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
