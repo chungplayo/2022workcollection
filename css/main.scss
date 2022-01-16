@@ -460,11 +460,6 @@ footer {
         transition: 150ms cubic-bezier(.25,.1,.25,1);
     }
 
-    &:active {
-        transform: scale(0.98);
-        transition: 0.3s ease;
-    }
-
     > a {
         position: absolute;
         top: 0;
@@ -528,10 +523,6 @@ nav {
     background-size: 24px;
     background-repeat: no-repeat;
     background-position: center;
-
-    &:active {
-        transform: translateX(-50%);
-    }
 
 }
 
