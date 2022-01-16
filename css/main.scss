@@ -194,11 +194,13 @@ html, body {
 
     .works-card {
         position: relative;
+        top: 0px;
         width: 100%;
         background-color: var(--bg-img);
         border-radius: var(--img-rounded);
 
         transition: 0.3s ease;
+        transform: scale(1);
         box-shadow: 0px 0px 0px rgba(#000, 0);
         
         background-image: url("../img/noise.png");
@@ -207,9 +209,16 @@ html, body {
         background-position: top left;
 
         &:hover {
+            position: relative;
+            top: -4px;
             transition:  0.3s ease;
             background-color: #e0e0e0;
             box-shadow: 0px 8px 16px rgba(#000, 0.2);
+        }
+
+        &:active {
+            transform: scale(0.98);
+            transition: 0.3s ease;
         }
 
         .info {
@@ -442,11 +451,18 @@ footer {
     background-color: #fff;
     box-shadow: 0px 8px 16px rgba(#000, 0.1);
     transition: 150ms cubic-bezier(.25,.1,.25,1);
+    transform: scale(1);
+    transition: 0.3s ease;
 
     &:hover {
         box-shadow: 0px 8px 20px rgba(#000, 0.2);
         // background-color: rgba(#000, 0.02);
         transition: 150ms cubic-bezier(.25,.1,.25,1);
+    }
+
+    &:active {
+        transform: scale(0.98);
+        transition: 0.3s ease;
     }
 
     > a {
@@ -512,6 +528,15 @@ nav {
     background-size: 24px;
     background-repeat: no-repeat;
     background-position: center;
+    
+    transition: 0.3s ease;
+    transform: scale(1);
+
+    &:active {
+        transform: translateX(-50%);
+        transform: scale(0.98);
+        transition: 0.3s ease;
+    }
 }
 
 .contact-info {
