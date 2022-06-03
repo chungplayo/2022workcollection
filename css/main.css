@@ -29,10 +29,12 @@ img {
 }
 
 :root {
+  --text-color: #000;
   --text-main: 0.7;
   --text-read: 0.5;
   --text-desc: 0.3;
   --bg-img: #DFDFDF;
+  --bg: #f0f0f0;
   --grid-gap: 32px;
   --grid-project-gap: 32px;
   --viewside-gap: 32px;
@@ -53,11 +55,11 @@ body {
 
 html, body {
   position: relative;
-  background-color: #f0f0f0;
+  background-color: var(--bg);
   margin: 0;
   font-family: "Inter", "Noto Sans TC", sans-serif;
   font-size: 16px;
-  color: #000;
+  color: var(--text-color);
 }
 
 ::-moz-selection {
